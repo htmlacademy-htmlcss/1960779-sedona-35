@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+<body>
+  <header class="page-header">
+    <img class="logo" src="" alt="герб города Седона">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="main-page">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotel">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main class="main-catalog">
+    <section class="hostel">
+      <h1 class="hostel-title">Гостиницы Седоны</h1>
+
+        <form class="hostel-option" action="#" method="post">
+          <section>
+            <p>Инфраструктура:</p>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label> <br>
+            <input type="checkbox" name="parking" id="parking" checked>
+            <label for="parking">Парковка</label> <br>
+            <input type="checkbox" name="network" id="network">
+            <label for="network">Wi-Fi</label>
+          </section>
+          <section>
+            <p>Тип жилья:</p>
+            <input type="radio" name="pool" id="pool" checked>
+            <label for="pool">Гостиница</label> <br>
+            <input type="radio" name="parking" id="parking">
+            <label for="parking">Мотель</label> <br>
+            <input type="radio" name="network" id="network">
+            <label for="network">Апартаменты</label>
+          </section>
+        </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="email">
+      <h2 class="email-title">Подпишитесь на рассылку</h2>
+      <p class="email-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+      <form class="email-form" action="#" method="post">
+        <label for=""></label>
+        <input class="field" placeholder="Ваш e-mail" type="email" name="news-email" required>
+        <button class="button-email" type="submit">
+          <span class="visually-hidden">Подписаться</span>
+        </button>
+      </form>
+    </section>
+    <section class="contact">
+      <ul class="social">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy">
+            <img src="#" alt="соц. сеть вконтакте">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy">
+            <img src="#" alt="соц. сеть телеграм">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <img src="#" alt="ютюб канал">
+          </a>
+        </li>
+      </ul>
+      <a class="number-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+      <a class="link" href="https://htmlacademy.ru/">
+        <img src="#" alt="сайт HTML академии">
+      </a>
+    </section>
+  </footer>
+</body>
+</html>
