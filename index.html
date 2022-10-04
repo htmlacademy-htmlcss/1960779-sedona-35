@@ -6,8 +6,10 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="logo" src="index.html" alt="герб города Седона">
-        <nav class="navigation">
+      <a href="index.html">
+        <img class="logo" src="#" alt="герб города Седона">
+      </a>
+      <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -38,7 +40,7 @@
     </header>
 
     <main class="main-index">
-      
+
       <h1 class="visually-hidden">Город Седона</h1>
       <div>
         <img src="#" alt="Welcome to the gorgeous">
@@ -92,7 +94,7 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-hostel" href="catalog.html">Поиск гостиницы в седоне</a>
+        <buttom class="search-hostel" type="button">Поиск гостиницы в седоне</buttom>
       </section>
 
     </main>
@@ -102,9 +104,9 @@
       <section class="email">
         <h2 class="email-title">Подпишитесь на рассылку</h2>
         <p class="email-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-        <form class="email-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="news-email"></label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="news-email" required>
+        <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="news-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="news-email" id="news-email" required>
           <button class="button-email" type="submit">Подписаться</button>
         </form>
       </section>
