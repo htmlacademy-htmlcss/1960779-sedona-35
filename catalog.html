@@ -7,18 +7,18 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
+      <a class="nav-logo" href="index.html">
         <img class="logo" src="images/icon/logo.svg" width="140" height="70" alt="Герб города Седона.">
       </a>
       <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link " href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item link-line">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -31,7 +31,6 @@
             <li class="navigation-item">
               <a class="navigation-favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <span class="favourites-twelve">12</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -45,8 +44,8 @@
       <div class="page-container">
 
         <section class="hostel">
-          <h1 class="hostel-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <h1 class="hostel-title reset-styles">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs reset-styles">
             <li class="breadcrumbs-item">
               <a class="breadcrums-link" href="index.html">
                 <img src="/images/icon/home.svg" alt="Главная">
@@ -106,7 +105,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="page-catalog reset-styles">
           <h2 class="found-hostel">Найдено гостиниц: 38</h2>
           <select class="select-opt" name="change" aria-label="Сортировка">
             <option value="low">Сначала дешевые</option>
@@ -130,7 +129,7 @@
           <div class="catalog">
             <ol class="catalog-list">
               <li class="catalog-element">
-                <a class="catalog-link" href="#">
+                <a class="catalog-element-link" href="#">
                   <h3 class="catalog-title">Amara Resort & Spa</h3>
                   <img class="catalog-picture" src="images/hotel_amara.jpg" width="300" height="212" alt="Курортный отель и спа-центр">
                 </a>
@@ -143,8 +142,8 @@
                 <span class="catalog-star"></span>
                 <span class="catalog-rang">Рейтинг: 8,5</span>
               </li>
-              <li>
-                <a class="catalog-link" href="#">
+              <li class="catalog-element">
+                <a class="catalog-element-link" href="#">
                   <h3 class="catalog-title">Villas at Poco Diablo</h3>
                   <img class="catalog-picture" src="images/hotel_villas.jpg" width="300" height="212" alt="Виллы в Поко Диабло">
                 </a>
@@ -157,8 +156,8 @@
                 <span class="catalog-star"></span>
                 <span class="catalog-rang">Рейтинг: 9,2</span>
               </li>
-              <li>
-                <a class="catalog-link" href="#">
+              <li class="catalog-element">
+                <a class="catalog-element-link" href="#">
                   <h3 class="catalog-title">Desert Quail Inn</h3>
                   <img class="catalog-picture" src="images/hotel_desert.jpg" width="300" height="212" alt="Гостиница Пустынный перепел">
                 </a>
@@ -171,8 +170,8 @@
                 <span class="catalog-star"></span>
                 <span class="catalog-rang">Рейтинг: 6,9</span>
               </li>
-              <li>
-                <a class="catalog-link" href="#">
+              <li class="catalog-element">
+                <a class="catalog-element-link" href="#">
                   <h3 class="catalog-title">GreenTree Inn</h3>
                   <img class="catalog-picture" src="images/hotel_green.jpg" width="300" height="212" alt="Отель Гринтри Инн">
                 </a>
@@ -201,7 +200,7 @@
             <li>
               <a class="number" href="#">4</a>
             </li>
-            <li>
+            <li class="ellipsis">
               <span>...</span>
             </li>
             <li>
@@ -210,7 +209,7 @@
           </ul>
         </section>
 
-        <section class="email">
+        <section class="email email-catalog">
             <h2 class="email-title">Подпишитесь на рассылку</h2>
             <p class="email-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
             <form class="email-form" action="https://echo.htmlacademy.ru" method="get">
