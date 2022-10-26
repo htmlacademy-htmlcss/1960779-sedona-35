@@ -51,21 +51,24 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-list {
-  margin-left: 160px;
-  padding: 0;
-  width: 350px;
+  margin-left: 190px;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 32px;
 }
 
 .navigation-link {
@@ -78,31 +81,35 @@ body {
 
 .link-line {
   text-decoration: underline 2px solid #756257;
-  text-underline-offset: 25px;
+  text-underline-offset: 23px;
 }
 
 .navigation-user {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .navigation-search {
   background-image: url(/images/icon/search.svg);
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
   width: 44px;
   height: 64px;
 }
 
 .navigation-favourites {
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../images/icon/like.svg);
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
   width: 44px;
   height: 64px;
 }
 
-.favourites-twelve {
+.twelve {
   display: inline-block;
   text-align: center;
   width: 20px;
@@ -112,21 +119,25 @@ body {
   background-color: #7DB54F;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: -0.1em;
   position: relative;
-  left: 18px;
+  left: 20px;
   top: 5px;
+  color: #FFFFFF;
 }
 
 .navigation-button {
+  display: flex;
+  justify-content: center;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  width: 160px;
+  padding: 8px 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  margin-left: 20px;
 }
 
 .visually-hidden {
@@ -148,11 +159,6 @@ body {
 
 .main-index {
   text-align: center;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main-image {
@@ -191,7 +197,7 @@ body {
   font-weight: 700;
   margin:0;
   text-align: center;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .sedona-specification {
@@ -210,14 +216,11 @@ body {
 .advantages-first {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-second {
   display: flex;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
 }
 
 .advantages-block {
@@ -259,9 +262,13 @@ body {
 .blue {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #82B3D3;
   color: #ffffff;
+}
+
+.blue-reverse {
+  flex-direction: row-reverse;
 }
 
 .advantages-title--second {
@@ -298,7 +305,7 @@ body {
 }
 
 .search {
-  height: 406px;
+  padding: 96px;
 }
 
 .search-title {
@@ -306,7 +313,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  padding-top: 96px;
   margin-bottom: 20px;
 }
 
@@ -326,6 +332,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
+  width: 376px;
+  margin: 0 auto;
 }
 
 .with_background {
@@ -338,7 +346,8 @@ body {
 }
 
 .email {
-  height: 415px;
+  padding-top: 96px;
+  padding-bottom: 104px;
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,15 +360,12 @@ body {
 }
 
 .email-title {
-  margin: 0;
-  padding-top: 96px;
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .email-description {
-  margin: 0;
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
@@ -377,7 +383,7 @@ body {
 }
 
 .button-email {
-  border-width: 0px;
+  border-width: 0;
   background-color: #82B3D3;
   color: #ffffff;
   border-top-right-radius: 4px;
@@ -387,25 +393,26 @@ body {
   line-height: 26px;
 }
 
-.page-footer-container {
-  height: 120px;
+.page-footer {
+  padding: 30px 70px 40px;
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .social {
-  margin: 0;
-  padding: 0;
   max-width: 192px;
   display: flex;
   flex-shrink: 0;
-  margin-top: 58px;
 }
 
 .social-item {
   text-decoration: none;
   list-style-type: none;
+  display: block;
+}
+
+.social-link {
   display: block;
   width: 48px;
   height: 40px;
@@ -416,13 +423,10 @@ body {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
-  margin-top: 45px;
 }
 
-.link {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 48px;
+.link-img {
+  display: block;
 }
 
 /*catalog*/
@@ -435,18 +439,22 @@ body {
   color: #ffffff;
 }
 
+.hostel-frame {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .hostel-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  margin-left: 80px;
   padding-top: 35px;
   margin-bottom: 10px;
 }
 
 .breadcrumbs {
   list-style-type: none;
-  margin-left: 80px;
+  margin-top: 8px;
 }
 
 .breadcrums-link {
@@ -458,11 +466,11 @@ body {
 .breadcrumbs-item {
   display: inline-block;
   gap: 11px;
-
 }
 
 .hostel-option {
   display: flex;
+  margin-top: 40px;
 }
 
 .filter {
@@ -502,6 +510,11 @@ body {
   border-width: 0px;
 }
 
+.page-catalog {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .found-hostel {
   text-transform: uppercase;
   font-style: 700;
@@ -527,26 +540,85 @@ body {
 
 .visual {
   list-style-type: none;
+  display: flex;justify-content: space-between;
+  width: 168px;
+  gap: 8px;
+}
+
+.visual-tile {
+  background-image: url(../images/icon/tile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  padding: 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.visual-slide {
+  background-image: url(../images/icon/slide.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  padding: 16px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.visual-list {
+  background-image: url(../images/icon/list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+  padding: 16px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.visual-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 66px;
 }
 
 .catalog-list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+  grid-template-columns: 340px 340px 340px;
+  margin-bottom: 40px;
 }
 
 .catalog-element {
   min-height: 438px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .catalog-element-link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
 }
 
 .catalog-title {
   font-size: 24px;
   line-height: 28px;
+}
+
+.catalog-price {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-detail {
@@ -560,10 +632,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .catalog-favorite {
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding: 8px 20px;
+  width: 140px;
+  padding: 10px;
   border-radius: 4px;
   border-width: 0px;
   font-size: 16px;
@@ -575,15 +649,22 @@ body {
 
 .button-green {
   background-color: #7DB54F;
-  padding: 8px 18px;
+}
+
+.catalog-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-star {
   background-image: url(/images/icon/star.svg);
-  background-repeat: no-repeat;
+  align-self: center;
+  width: 18px;
+  height: 17px;
 }
 
 .catalog-rang {
+  display: flex;
   background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
@@ -591,21 +672,27 @@ body {
   border-radius: 4px;
 }
 
+.rang-star {
+  display: flex;
+  justify-content: space-between;
+}
+
 .paginator {
   list-style-type: none;
   text-decoration: none;
-  width: 400px;
   font-size: 20px;
   display: flex;
   justify-content: flex-start;
   align-content: space-between;
   gap: 8px;
+  border-top: 2px solid #e6e6e6;
+  padding-top: 40px;
 }
 
 .ellipsis {
   align-self: center;
   text-align: center;
-  width: 400px;
+  width: 40px;
 }
 
 .number {
