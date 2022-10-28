@@ -7,21 +7,24 @@
   </head>
   <body>
     <header class="page-header">
+
       <a class="nav-logo" href="index.html">
         <img class="logo" src="images/icon/logo.svg" width="140" height="70" alt="Герб города Седона.">
       </a>
+
       <nav class="navigation">
           <ul class="navigation-list reset-styles">
-            <li class="navigation-item">
+            <li class="navigation-list-item navigation-item">
               <a class="navigation-link " href="index.html">Главная</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-list-item navigation-item">
               <a class="navigation-link" href="#">О седоне</a>
             </li>
-            <li class="navigation-item link-line">
+            <li class="navigation-list-item navigation-item link-line">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+
           <ul class="navigation-user reset-styles">
             <li class="navigation-item">
               <a class="navigation-search" href="#">
@@ -49,61 +52,65 @@
             <h1 class="hostel-title reset-styles">Гостиницы Седоны</h1>
             <ul class="breadcrumbs reset-styles">
               <li class="breadcrumbs-item">
-                <a class="breadcrums-link" href="index.html">
+                <a class="breadcrumbs-link" href="index.html">
                   <img src="/images/icon/home.svg" alt="Главная">
                 </a>
                 <img src="/images/icon/arrow right.svg" alt="">
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrums-link" href="catalog.html">Гостиницы</a>
+                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
 
-
             <form class="hostel-option" action="https://echo.htmlacademy.ru" method="GET">
+              <div class="check-list">
+                <fieldset class="filter reset-styles">
+                  <legend class="filter-title reset-styles title-styles">Инфраструктура:</legend>
+                  <div class="filter-check">
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool">Бассейн</label> <br>
+                  </div>
+                  <div class="filter-check">
+                    <input type="checkbox" name="parking" id="parking" checked>
+                    <label for="parking">Парковка</label> <br>
+                  </div>
+                  <div class="filter-check">
+                    <input type="checkbox" name="network" id="network">
+                    <label for="network">Wi-Fi</label>
+                  </div>
+                </fieldset>
 
-              <fieldset class="filter reset-styles">
-                <legend class="filter-title reset-styles">Инфраструктура:</legend>
-                <div class="filter-check">
-                  <input type="checkbox" name="pool" id="pool" checked>
-                  <label for="pool">Бассейн</label> <br>
-                </div>
-                <div class="filter-check">
-                  <input type="checkbox" name="parking" id="parking" checked>
-                  <label for="parking">Парковка</label> <br>
-                </div>
-                <div class="filter-check">
-                  <input type="checkbox" name="network" id="network">
-                  <label for="network">Wi-Fi</label>
-                </div>
-              </fieldset>
+                <fieldset class="filter reset-styles">
+                  <legend class="filter-title reset-styles title-styles">Тип жилья:</legend>
+                  <div class="filter-check">
+                    <input type="radio" name="filter" value="Гостиница" id="hostel" checked>
+                    <label for="hostel">Гостиница</label> <br>
+                  </div>
+                  <div class="filter-check">
+                    <input type="radio" name="filter" value="Мотель" id="motel">
+                    <label for="motel">Мотель</label> <br>
+                  </div>
+                  <div class="filter-check">
+                    <input type="radio" name="filter" value="Апартаменты" id="apartment">
+                    <label for="apartment">Апартаменты</label>
+                  </div>
+                </fieldset>
+              </div>
 
-              <fieldset class="filter reset-styles">
-                <legend class="filter-title reset-styles">Тип жилья:</legend>
-                <div class="filter-check">
-                  <input type="radio" name="filter" value="Гостиница" id="hostel" checked>
-                  <label for="hostel">Гостиница</label> <br>
-                </div>
-                <div class="filter-check">
-                  <input type="radio" name="filter" value="Мотель" id="motel">
-                  <label for="motel">Мотель</label> <br>
-                </div>
-                <div class="filter-check">
-                  <input type="radio" name="filter" value="Апартаменты" id="apartment">
-                  <label for="apartment">Апартаменты</label>
-                </div>
-              </fieldset>
+              <div class="cost-button">
+                <fieldset class="filter-cost reset-styles">
+                  <legend class="title-styles">Стоимость, Р:</legend>
+                  <div class="visual-input">
+                    <input class="input-area-zero reset-styles" type="text" name="price" placeholder="0">
+                    <input class="input-area-ninth reset-styles" type="text" name="price" placeholder="9000">
+                  </div>
+                  <input type="range">
+                </fieldset>
 
-              <fieldset class="filter-cost reset-styles">
-                <legend>Стоимость, Р:</legend>
-                <input type="text" name="price" placeholder="0">
-                <input type="text" name="price" placeholder="9000">
-                <input type="range">
-              </fieldset>
-
-              <div class="search">
-                <button class="submit" type="submit">Применить</button>
-                <button class="reset" type="reset">Сбросить</button>
+                <div class="search-buttom reset-styles">
+                  <button class="submit" type="submit">Применить</button>
+                  <button class="reset" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </div>
@@ -147,7 +154,7 @@
                   <button class="catalog-favorite">в избранное</button>
                 </div>
                 <div class="rang-star">
-                  <span class="catalog-star"></span>
+                  <span class="catalog-star-four"></span>
                   <span class="catalog-rang reset-styles">Рейтинг: 8,5</span>
                 </div>
               </li>
@@ -165,7 +172,7 @@
                   <button class="catalog-favorite button-green">в избранное</button>
                 </div>
                 <div class="rang-star">
-                  <span class="catalog-star"></span>
+                  <span class="catalog-star-four"></span>
                   <span class="catalog-rang reset-styles">Рейтинг: 9,2</span>
                 </div>
               </li>
@@ -183,7 +190,7 @@
                   <button class="catalog-favorite">в избранное</button>
                 </div>
                 <div class="rang-star">
-                  <span class="catalog-star"></span>
+                  <span class="catalog-star-three"></span>
                   <span class="catalog-rang reset-styles">Рейтинг: 6,9</span>
                 </div>
               </li>
@@ -201,7 +208,7 @@
                   <button class="catalog-favorite">в избранное</button>
                 </div>
                 <div class="rang-star">
-                  <span class="catalog-star"></span>
+                  <span class="catalog-star-two"></span>
                   <span class="catalog-rang reset-styles">Рейтинг: 5,0</span>
                 </div>
               </li>
