@@ -35,6 +35,15 @@ body {
 .reset-styles {
   margin: 0;
   padding: 0;
+  border: 0;
+  list-style-type: none;
+}
+
+.title-styles {
+  font-weight: 700;
+  line-height: 24px;
+  width: 100%;
+  padding-bottom: 32px;
 }
 
 /*header*/
@@ -437,6 +446,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  padding-bottom: 73px;
 }
 
 .hostel-frame {
@@ -453,34 +463,81 @@ body {
 }
 
 .breadcrumbs {
-  list-style-type: none;
-  margin-top: 8px;
+  display: flex;
+  gap: 10px;
 }
 
-.breadcrums-link {
+.breadcrumbs-link {
   text-decoration: none;
   color: #ffffff;
-  width: 115px;
 }
 
-.breadcrumbs-item {
-  display: inline-block;
-  gap: 11px;
+.breadcrumbs-link:nth-last-child(n) {
+  margin-right: 10px;
 }
 
 .hostel-option {
-  display: flex;
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-list {
+  display: flex;
 }
 
 .filter {
   display: flex;
   flex-direction: column;
   border: 0;
+  margin-right: 70px;
+  gap: 16px;
+}
+
+.filter-check {
+  display: flex;
+  gap: 16px;
+}
+
+.cost-button {
+  display: flex;
+  align-items: baseline;
 }
 
 .filter-cost {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.visual-input {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.input-area-zero {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 123px;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input-area-ninth {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 123px;
+  height: 45px;
+  margin-left: 2px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search-buttom {
   display: flex;
   flex-direction: column;
 }
@@ -488,6 +545,7 @@ body {
 .search {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .submit {
@@ -499,6 +557,7 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   border-width: 0px;
+  margin-bottom: 32px;
 }
 
 .reset {
@@ -508,6 +567,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-width: 0px;
+  padding: 8px 58px;
 }
 
 .page-catalog {
@@ -536,11 +596,14 @@ body {
   background-image: url(/images/icon/arrow.svg);
   background-repeat: no-repeat;
   background-position: left 260px center;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 .visual {
   list-style-type: none;
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   width: 168px;
   gap: 8px;
 }
@@ -580,27 +643,23 @@ body {
 
 .visual-container {
   display: flex;
-  justify-content: space-between;
   padding-top: 56px;
   padding-bottom: 66px;
 }
 
 .catalog-list {
-  list-style-type: none;
   display: grid;
-  gap: 20px;
-  grid-template-columns: 340px 340px 340px;
-  margin-bottom: 40px;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .catalog-element {
-  min-height: 438px;
-  border: 2px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .catalog-element-link {
@@ -609,6 +668,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   gap: 16px;
+
 }
 
 .catalog-title {
@@ -656,11 +716,31 @@ body {
   justify-content: space-between;
 }
 
-.catalog-star {
+.catalog-star-four {
   background-image: url(/images/icon/star.svg);
   align-self: center;
-  width: 18px;
+  width: 96px;
   height: 17px;
+  background-repeat: round;
+  background-size: 24px;
+}
+
+.catalog-star-three {
+  background-image: url(/images/icon/star.svg);
+  align-self: center;
+  width: 72px;
+  height: 17px;
+  background-repeat: round;
+  background-size: 24px;
+}
+
+.catalog-star-two {
+  background-image: url(/images/icon/star.svg);
+  align-self: center;
+  width: 48px;
+  height: 17px;
+  background-repeat: round;
+  background-size: 24px;
 }
 
 .catalog-rang {
@@ -670,6 +750,7 @@ body {
   line-height: 20px;
   padding: 8px 22px;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .rang-star {
@@ -685,14 +766,15 @@ body {
   justify-content: flex-start;
   align-content: space-between;
   gap: 8px;
-  border-top: 2px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
   padding-top: 40px;
+  margin-top: 40px;
 }
 
 .ellipsis {
   align-self: center;
   text-align: center;
-  width: 40px;
+  width: 60px;
 }
 
 .number {
