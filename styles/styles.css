@@ -1148,6 +1148,7 @@ body {
   width: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 5;
+  min-height: 3308px;
 }
 
 .modal {
@@ -1157,6 +1158,7 @@ body {
   padding: 62px 72px 65px 67px;
   background-color: #ffffff;
   width: 577px;
+  height: min-content;
 }
 
 .modal-close-button {
