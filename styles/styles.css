@@ -1089,7 +1089,7 @@ body {
 }
 
 .close-modal {
-  display: none !important;
+  display: none;
 }
 
 .modal-container {
