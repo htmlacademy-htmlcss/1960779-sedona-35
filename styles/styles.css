@@ -106,7 +106,6 @@ body {
   text-transform: capitalize;
 }
 
-.navigation-link:hover::after,
 .navigation-link-current::after {
   content: "";
   position: absolute;
@@ -139,11 +138,11 @@ body {
 }
 
 .navigation-search {
-  background-image: url(../images/icon/search.svg);
+  background-image: url("../images/icon/search.svg");
 }
 
 .navigation-favourites {
-  background-image: url(../images/icon/like.svg);
+  background-image: url("../images/icon/like.svg");
   text-decoration: none;
 }
 
@@ -203,7 +202,7 @@ body {
 
 .main-image::after {
   content: "";
-  background-image: url(../images/icon/down_line.svg);
+  background-image: url("../images/icon/down_line.svg");
   display: block;
   position: absolute;
   width: 100%;
@@ -318,21 +317,21 @@ body {
 
 .advantages-item--house {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/icon/motel.svg);
+  background-image: url("../images/icon/motel.svg");
   background-repeat: no-repeat;
   background-position: left 50% top 80px;
 }
 
 .advantages-item--food {
   background-color: #FFFFFF;
-  background-image: url(../images/icon/food.svg);
+  background-image: url("../images/icon/food.svg");
   background-repeat: no-repeat;
   background-position: left 50% top 81px;
 }
 
 .advantages-item--souvenir {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/icon/souvenirs.svg);
+  background-image: url("../images/icon/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: left 50% top 78px;
 }
@@ -363,7 +362,7 @@ body {
 }
 
 .with_background {
-  background-image: url(../images/mailing.jpg);
+  background-image: url("../images/mailing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
@@ -515,7 +514,7 @@ body {
 
 .hostel {
   background-color: #3873ab;
-  background-image: url(../images/catalog_backgroung.jpg);
+  background-image: url("../images/catalog_backgroung.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 70px;
@@ -556,7 +555,7 @@ body {
   position: relative;
   content: "";
   background-repeat: no-repeat;
-  background-image: url(../images/icon/home.svg);
+  background-image: url("../images/icon/home.svg");
   background-size: contain;
   width: 12px;
   height: 12px;
@@ -567,7 +566,7 @@ body {
   position: relative;
   content: "";
   background-repeat: no-repeat;
-  background-image: url(../images/icon/arrow_right.svg);
+  background-image: url("../images/icon/arrow_right.svg");
   background-size: contain;
   width: 8px;
   height: 12px;
@@ -630,7 +629,7 @@ body {
 }
 
 .custom-checkbox:checked + .custom-check::before {
-  background-image: url(../images/icon/check.svg)
+  background-image: url("../images/icon/check.svg")
 }
 
 .custom-check:hover::before {
@@ -680,7 +679,7 @@ body {
 }
 
 .custom-radio:checked + .radio-type::before {
-  background-image: url(../images/icon/circle.svg)
+  background-image: url("../images/icon/circle.svg")
 }
 
 .radio-type:hover::before {
@@ -781,14 +780,6 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  opacity: 0.6;
-}
-
-.range-toggle:active {
-  opacity: 0.3;
-}
-
 .range-toggle:focus {
   outline: none;
   box-shadow: 0 0 0 2px #82B3D3;
@@ -884,7 +875,7 @@ body {
   border: 2px solid #E5E5E5;
   background-color: #FFFFFF;
   border-radius: 4px;
-  background-image: url(../images/icon/arrow.svg);
+  background-image: url("../images/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: left 260px center;
   cursor: pointer;
@@ -947,16 +938,16 @@ body {
 }
 
 .visual-tile {
-  background-image: url(../images/icon/tile.svg);
+  background-image: url("../images/icon/tile.svg");
   border: 2px solid #000000;
 }
 
 .visual-slide {
-  background-image: url(../images/icon/slide.svg);
+  background-image: url("../images/icon/slide.svg");
 }
 
 .visual-list {
-  background-image: url(../images/icon/list.svg);
+  background-image: url("../images/icon/list.svg");
 }
 
 .visual-container {
@@ -991,6 +982,11 @@ body {
 .catalog-title {
   font-size: 24px;
   line-height: 28px;
+}
+
+.catalog-picture {
+  height: auto;
+  max-width: 100%;
 }
 
 .catalog-price {
@@ -1053,7 +1049,7 @@ body {
 }
 
 .catalog-star {
-  background-image: url(../images/icon/star.svg);
+  background-image: url("../images/icon/star.svg");
   align-self: center;
   background-repeat: round;
   background-size: 24px;
@@ -1233,7 +1229,7 @@ body {
   padding-left: 20px;
   padding-right: 60px;
   border-radius: 4px;
-  background-image: url(../images/icon/calendar.svg);
+  background-image: url("../images/icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 20px;
   background-color: #F2F2F2;
@@ -1443,16 +1439,12 @@ body {
 }
 
 .button-minus:active svg {
-  opacity: 0.3;
+  opacity: 0.2;
   border: none;
 }
 
 .button-minus:focus {
   outline: none;
-}
-
-.button-minus:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-minus:disabled {
@@ -1472,6 +1464,7 @@ body {
   color: #000000;
 }
 
+
 .button-plus:focus svg {
   padding: 3px;
   color: #000000;
@@ -1479,13 +1472,13 @@ body {
   border-radius: 4px;
 }
 
-.button-plus:focus {
-  outline: none;
+.button-plus:active svg {
+  opacity: 0.2;
+  border: none;
 }
 
-.button-plus:active svg {
-  opacity: 0.3;
-  border: none;
+.button-plus:focus {
+  outline: none;
 }
 
 .button-plus:disabled {
